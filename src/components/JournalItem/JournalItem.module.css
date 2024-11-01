@@ -1,0 +1,29 @@
+.journal-item__header {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.journal-item__body {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.journal-item__date {
+    color: rgba(255, 255, 255, .4);
+}
+
+.journal-item__text {
+    margin: 0;
+    color: rgba(255, 255, 255, .6);
+}
+
+.journal-item__button {
+    display: block;
+    text-align: left;
+    padding: 20px;
+}

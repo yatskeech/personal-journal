@@ -1,0 +1,108 @@
+.journal-form {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.row:first-child:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("/public/calendar.svg") no-repeat;
+}
+
+.row:last-child:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("/public/tag.svg") no-repeat;
+}
+
+.row::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.label {
+    width: 72px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.textarea {
+    flex-grow: 1;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    padding: 4px 8px;
+    outline: 2px solid transparent;
+    transition: outline-color .25s;
+}
+
+.invalid {
+    outline: 2px solid rgba(255, 67, 67, 0.8);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.delete:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.delete svg {
+    opacity: .4;
+}
+
+.hidden {
+    display: none;
+}
